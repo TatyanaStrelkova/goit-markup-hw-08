@@ -1,0 +1,86 @@
+.features {
+  @extend %section;
+}
+
+.features__list {
+  @extend %list;
+  display: block;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features__item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__icon-antenna::before {
+  background-image: url(../img/icons/antenna.svg);
+}
+
+.features__icon-clock::before {
+  background-image: url(../img/icons/clock.svg);
+}
+
+.features__icon-diagram::before {
+  background-image: url(../img/icons/diagram.svg);
+}
+
+.features__icon-astronaut::before {
+  background-image: url(../img/icons/astronaut.svg);
+}
+
+.features__item {
+
+  @include for-size(tablet-only) {
+    width: calc((100% - 30px) / 2);
+
+    &:nth-child(2n+1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n+2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include for-size(desktop) {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+  margin-right: 0;
+}
+}
+}
+.features__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+ @include for-size(mobile-only) {
+    text-align: center;
+}
+  
+}
+
+.features__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}

@@ -1,0 +1,149 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $second-bg-color;
+}
+
+.footer__container {
+     @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+@include for-size(tablet) {
+  display: flex;
+}
+
+@include for-size(tablet-only) {
+    flex-wrap: wrap;
+  justify-content: space-around;
+}
+}
+
+.footer__contacts {
+
+  @include for-size(desktop) {
+    margin-right: 70px;
+  }
+}
+
+.footer__logo {
+  padding: 0;
+  margin-bottom: 20px;
+
+}
+
+.logo__studio--footer {
+  color: $main-white-color;
+  font-family: Raleway, sans-serif;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__location {
+  color: $main-white-color;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__mail {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: $second-white-color;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+@include for-size(desktop) {
+   margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+}
+
+.address__tel {
+  display: inline-block;
+  color: $second-white-color;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-socials {
+
+  @include for-size(desktop) {
+  margin-right: 93px;
+  }
+
+  & .slogan {
+    @include for-size(tablet-only) {
+      margin-top: 0;
+    }
+  }
+}
+
+.slogan {
+   display: block;
+   margin-top: 60px;
+  margin-bottom: 20px;
+  color: $main-white-color;
+  text-transform: uppercase;
+
+  @include for-size(desktop) {
+    margin-top: 12px;
+  }
+
+}
+
+.footer__icon {
+  fill: $main-white-color;
+}
+
+.subscribe {
+  min-width: 450px;
+
+  @media screen and (max-width:450px) {
+    min-width: 100%;
+  }
+
+  @include for-size(desktop) {
+  display: flex;
+  }
+}
+
+.subscribe__input {
+  margin-bottom: 20px;
+   padding: 15px 16px;
+  color: $second-white-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @include for-size (desktop) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.subscribe__button::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/icon-send.svg);
+  color: $main-white-color;
+}

@@ -1,0 +1,13 @@
+.section {
+  @extend %section;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
