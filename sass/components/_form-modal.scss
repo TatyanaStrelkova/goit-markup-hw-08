@@ -118,7 +118,7 @@
 .form-modal__checkbox--checked:checked ~ span::before {
   background-color: $hover-text-color;
   border-color: $hover-text-color;
-  background-image: url(../img/icons/check.svg);
+  background-image: url('../images/icons/check.svg');
   background-repeat: no-repeat;
   background-position: center;
 }

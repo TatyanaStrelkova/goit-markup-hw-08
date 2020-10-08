@@ -106,23 +106,19 @@
 
 .navigation__link {
   display: inline-block;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 18px;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 
   @include for-size(tablet) {
   padding-top: 32px;
   padding-bottom: 32px;
-  }
-
-  color: $title-text-color;
-  font-weight: 500;
-   font-size: 18px;
-
-   @include for-size(tablet) {
   font-size: 14px;
-   }
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  cursor: pointer;
+  }
 
   &:hover,
   &:focus {
@@ -144,11 +140,11 @@
   }
 
    @include for-size(tablet) {
-  bottom: -13px;
+  bottom: -2px;
   }
   
     @include for-size(desktop) {
-  bottom: -5px;
+  bottom: -1px;
   }
 
   right: 0;
@@ -189,7 +185,17 @@ align-items: center;
 }
 
 .contact__item {
-   font-size: 18px;
+
+    @include for-size(mobile-only) {
+      font-size: 18px;
+  }
+  @include for-size (tablet-only) {
+    font-size: 12px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 14px;
+  }
 
 &:not(:last-child) {
 
