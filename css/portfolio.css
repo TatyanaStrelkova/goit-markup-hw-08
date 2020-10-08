@@ -490,18 +490,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .navigation__link {
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-}
-
-@media (min-width: 768px) {
-  .navigation__link {
     font-size: 14px;
   }
 }
@@ -536,13 +530,13 @@ img {
 
 @media (min-width: 768px) {
   .navigation__link--current::after {
-    bottom: -13px;
+    bottom: -2px;
   }
 }
 
 @media (min-width: 1200px) {
   .navigation__link--current::after {
-    bottom: -5px;
+    bottom: -1px;
   }
 }
 
@@ -587,8 +581,22 @@ img {
   }
 }
 
-.contact__item {
-  font-size: 18px;
+@media (max-width: 767px) {
+  .contact__item {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__item {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1103,7 +1111,7 @@ img {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  background-image: url(../img/icons/icon-send.svg);
+  background-image: url("../images/icons/icon-send.svg");
   color: #ffffff;
 }
 /*# sourceMappingURL=portfolio.css.map */
