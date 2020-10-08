@@ -1038,6 +1038,9 @@ img {
 }
 
 @media (max-width: 767px) {
+  .clients__item {
+    width: calc((100% - 60px) / 2);
+  }
   .clients__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
   }
